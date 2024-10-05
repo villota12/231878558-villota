@@ -4,70 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Resume</title>
+    <title>Resume_Villota</title>
 </head>
 <body>
-    <!--Header Name, Professional tilte, and Navigation links-->
+    <!--Header Name, Professional Title, and Navigation Links-->
     <header>
-    <h1>Frank Edward A. Villota<br>Software Engineering</h1>
-    <nav>
-        <ul>
-            <li><p><a href="c1">About Me</a></p></li>
-            <li><p><a href="c2">Skills</a></p></li>
-            <li><p><a href="c1">Experience</a></p></li>
-        </ul>
-    </nav>
+        <h1>Frank Edward A. Villota</h1>
+        <h2>Web Developer</h2>
+        <nav>
+            <ul>
+                <li><a href="#c1">About Me</a></li>
+                <li><a href="#c2">Skills</a></li>
+                <li><a href="#c3">Experience</a></li>
+                <li><a href="#c4">Education</a></li>
+                <li><a href="#c5">Projects</a></li>
+                <li><a href="#c6">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <!--About Me-->
-    <section>
-        <h2 id="c1">About Me</h2>
-        <p>I am passionate in creating artworks, designing, Crafting and making artworks. My hobbies are playing volleyball, watching videos, drawing, singing, dancing and manymore.</p>
+    <section id="c1">
+        <h2 class="hm">About Me</h2>
+        <pre>Hi, you can call me Frank, and I'm a passionate web developer with a strong foundation in creating dynamic and responsive websites. I have 5 years of experience in the industry, specializing in front-end development.
+        My journey into web development started with curiosity for how things work on the internet. I enjoy transforming ideas into functional websites, focusing on user experience and clean code. I believe that a good website should not only be visually appealing but also intuitive and user-friendly.
+        My hobbies are playing volleyball, dancing, singing, making art, and many more.
+        I'm always eager to learn and take on new challenges, and I'm currently looking for opportunities to collaborate on exciting projects. Feel free to reach out to me!</pre>
     </section>
 
-    <section>
-        <h2 id="c2">Skills</h2>
-        <ul>
+    <!--Skills-->
+    <section id="c2">
+        <h2 class="hm">Skills</h2>
+        <ul id="s1">
             <li>HTML</li>
+            <div class="pc">
+                <div class="pb" style="width: 60%;">60%</div>
+            </div>
             <li>CSS</li>
-            <li>Javascript</li>
+            <div class="pc">
+                <div class="pb" style="width: 50%;">50%</div>
+            </div>
+            <li>JavaScript</li>
+            <div class="pc">
+                <div class="pb" style="width: 50%;">50%</div>
+            </div>
             <li>Python</li>
+            <div class="pc">
+                <div class="pb" style="width: 53%;">53%</div>
+            </div>
             <li>Java</li>
-            <li>SQl</li>
+            <div class="pc">
+                <div class="pb" style="width: 15%;">15%</div>
+            </div>
+            <li>SQL</li>
+            <div class="pc">
+                <div class="pb" style="width: 54%;">54%</div>
+            </div>
         </ul>
     </section>
 
-    <section>
-        <h2 id="c3">Experience</h2>
-        <p>web Developer<br>Baguio Developers<br>Oct 1 2022 - November 23 2022</p>
+    <!--Experience-->
+    <section id="c3">
+        <h2 class="hm">Experience</h2>
+        <p>Web Developer<br>Baguio Developers<br>Oct 1 2022 - November 23 2022</p>
+        <p>Web Designer<br>Urdaneta Designers<br>February 8 2020 - February 24 2022</p>
+        <p>Web Creator<br>Asingan Creators<br>April 13 2021 - May 13 2021</p>
     </section>
 
-    <section>
-        <h2>Education</h2>
+    <!--Education-->
+    <section id="c4" class="education">
+        <h2 class="hm">Education</h2>
 
-        <p>Tertiary</p>
-        <P>University of the Cordilleras</P>
-        <p>2023-2026</p>
+        <div class="education-item">
+            <h3>Tertiary</h3>
+            <p>University of the Cordilleras</p>
+            <p>2023-2026</p>
+        </div>
+
+        <div class="education-item">
+            <h3>Secondary</h3>
+            <p>Luciano Millan National High School</p>
+            <p>2016-2023</p>
+        </div>
+
+        <div class="education-item">
+            <h3>Primary</h3>
+            <p>Toboy Elementary School</p>
+            <p>2010-2016</p>
+        </div>
+    </section>
+
+    <!--Projects-->
+    <section id="c5" class="projects">
+        <h2 class="hm">Projects</h2>
+
+        <div class="project-item">
+            <h3>Portfolio Website</h3>
+            <p>A personal website showcasing my skills, experiences, and projects. The site is built using HTML, CSS, and JavaScript and is fully responsive across all devices.</p>
+            <p><strong>Technologies used:</strong> HTML, CSS, JavaScript</p>
+            <a href="https://your-portfolio-link.com" class="btn" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-item">
+            <h3>E-commerce Website</h3>
+            <p>Developed a fully functional e-commerce website that allows users to browse products, add items to the cart, and proceed to checkout with payment integration.</p>
+            <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+            <a href="https://ecommerce-project-link.com" class="btn" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-item">
+            <h3>Task Management App</h3>
+            <p>Created a web application that helps users organize and prioritize their tasks. Features include user authentication, task categorization, and drag-and-drop functionality.</p>
+            <p><strong>Technologies used:</strong> Python (Flask), JavaScript, SQL</p>
+            <a href="https://task-manager-app-link.com" class="btn" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-item">
+            <h3>Responsive Blog Website</h3>
+            <p>Designed and developed a personal blog site where users can read, comment, and share posts. It includes an admin panel for managing content and users.</p>
+            <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, Django</p>
+            <a href="https://blog-website-link.com" class="btn" target="_blank">View Project</a>
+        </div>
+    </section>
+
+    <!--Contact-->
+    <section id="c6" class="contact">
+        <h2 class="hm">Contact</h2>
         
-        <p>Secondary</p>
-        <p>Luciano Millan National High School</p>
-        <p>2016-2023</p>
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:villotafrankedward@gmail.com">villotafrankedward@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+639914695367">0991 469 5367</a></p>
+            <p><strong>Facebook:</strong> <a href="https://www.facebook.com/FrankVillota" target="_blank">Frank Villota</a></p>
+        </div>
 
-        <p>Primary</p>
-        <p>Toboy Elementary School</p>
-        <p>2010-2016</p>
+        <div class="contact-info">
+            <p>I'm always open to new opportunities and exciting projects. Feel free to reach out to me if you'd like to collaborate or just have a chat!</p>
+        </div>
     </section>
-    
-    <section>
-        <h2>Projects</h2>
-        <p>Painting</p>
-    </section>
-
-    <section>
-        <h2>Contact</h2>
-        <p>Email: villotafrankedward@gmail.com</p>
-        <p>Cp#: 09914695367</p>
-        <p>FB: Frank Villota</p>
-    </section>
-
 </body>
 </html>
