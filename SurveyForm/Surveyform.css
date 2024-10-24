@@ -3,11 +3,21 @@ body{
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba( 0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s; 
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     }
+
+#description{
+    background-color: rgba(247, 213, 233, 0.348);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: inset;
+}
 
 h1{
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(209, 78, 179);
 }
 
 body:hover{
@@ -20,21 +30,60 @@ form{
     flex-direction: column;
 }
 
-button{
-    max-width: 100px;
-    text-align: auto;
-}
-#result{
-    text-align: center;
-    color: rgb(11, 192, 150);
-    padding-top: 20px;
-}
-
-label{
-    padding-top: 10px;
-}
-
 input:hover{
     background-color: rgba(57, 43, 43, 0.325);
     color: white;
+}
+
+button{
+    width: 70px;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    padding: 2px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: rgba(249, 241, 246, 0.299); 
+    border-radius: 5PX;
+    padding: 5px;
+}
+
+button:hover{
+    transform: translatey(-5px);
+    box-shadow: 0 4px 15px salmon;
+}
+
+label{
+    margin-top: 10px;
+}
+
+option{
+    margin: 0;
+}
+
+#name-label, #email-label, #number-label, #q1, #q2, #q3, #q4{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input{
+    margin-left: 30px;
+    border-radius: 5px;
+    max-width: 70%;
+}
+
+select{
+    margin-left: 30px;
+    max-width: 40%;
+}
+
+textarea{
+    margin-left: 30px;
+}
+
+form{
+    background-color: rgba(233, 218, 228, 0.144);
+    padding: 10PX;
+    border-radius: 10PX;
 }

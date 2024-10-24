@@ -5,35 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form for BMI</title>
     <link rel="stylesheet" href="Surveyform.css">
-    <script src="Surveyform.js"></script>
 </head>
 <body>
     <div id="surform">
-        <h1>BMI Calculation Survey</h1>
-        <p>This survey is designed to gather information on individuals' height and weight in order to calculate their Body Mass Index (BMI). By assessing the BMI, we aim to provide insights into participants' health status, helping them better understand whether they fall into categories such as underweight, normal, overweight, or obese.</p>
-        <form id="form">
-            <label for="name">Full Name: </label>
+        <!-- You should have a page title in an h1 element with an id of title -->
+        <h1 id="title">Survey Form for Sports</h1>
+        <!-- You should have a short explanation in a p element with an id of description -->
+        <p id="description">Thankyou for participating in our survey about sports! Our goal is to better understand community engagement in sport activities, preferences, and the impact of sports on overall well-being. Your feedback is valuable and will help us enhance local programs. Ths survey will take approxiamtely 5 minutes, and  your responses will remain confidential. We appreciate your time and insights!</p>
+        <!-- ou should have a form element with an id of survey-form -->
+        <form id="survey-form">
+            <!-- Inside the form element, you are required to enter your name in an input field that has an id of name and a type of text -->
+            <!-- For the name, email, and number input fields, you can see corresponding label elements in the form, that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label" -->
+            <!-- For the name, email, and number input fields, you can see placeholder text that gives a description or instructions for each field -->
+            <label id="name-label" for="name">Name: </label>
             <input type="text" id="name" placeholder="type your name" required>
-
-            <label for="age">Age: </label>
-            <input type="text" id="Age" placeholder="type your age" required>
-
-            <label for="height">Height: </label>
-            <input type="text" id="height" placeholder="type your height in cm" required>
-
-            <label for="weight">Weight: </label>
-            <input type="text" id="weight" placeholder="type your weight in kg" required>
-
-            <label for="gender">Gender: </label>
-            <select id="gender" name="gender" required>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="lgbtq">LGBTQ</option>
-                <option value="other">Other</option>
+            <!-- Inside the form element, you are required to enter your email in an input field that has an id of email -->
+            <!-- If you enter an email that is not formatted correctly, you will see an HTML5 validation error -->
+            <label id="email-label" for="email">Email: </label>
+            <input type="text" id="email" placeholder="type your email;" required>
+            <!-- Inside the form, you can enter a number in an input field that has an id of number -->
+            <!-- The number input should not accept non-numbers, either by preventing you from typing them or by showing an HTML5 validation error (depending on your browser).-->
+            <!-- f you enter numbers outside the range of the number input, which are defined by the min and max attributes, you will see an HTML5 validation error  -->
+            <label id="number-label" for="age">Age: </label>
+            <input type="text" id="number" min="1" max="99" placeholder="type your age" required>
+            <!-- Inside the form element, you should have a select dropdown element with an id of dropdown and at least two options to choose from -->
+            <label for="dropdown" id="q1">What is your favorite sport?</label>
+            <select name="sport" id="dropdown">
+                <option value="">choose here</option>
+                <option value="basketball">Basketball</option>
+                <option value="volleyball">Volleyball</option>
+                <option value="badminton">Badminton</option>
+                <option value="soccer">Soccer</option>
+                <option value="other">Others</option>
             </select>
-
-            <button type="button" onclick="calBMI()">Calculate BMI</button>
-            <div id="result" class="result"></div>
+            <!-- Inside the form element, you can select an option from a group of at least two radio buttons that are grouped using the name attribute -->
+            <p id="q2">Where do you play the most?</p>
+            <label><input type="radio" name="venue" value="indoor" required>Indoor</label>
+            <label><input type="radio" name="venue" value="outdoor" required>Outdoor</label>
+            <!-- Inside the form element, you can select several fields from a series of checkboxes, each of which must have a value attribute -->
+            <p id="q3">What time do you play?</p>
+            <label><input type="checkbox" name="time" value="morning">Morning</label>
+            <label><input type="checkbox" name="time" value="afternoon">Afternoon</label>
+            <label><input type="checkbox" name="time" value="evening">Evening</label>
+            <!-- Inside the form element, you are presented with a textarea for additional comments -->
+            <label for="comments" id="q3">What are the benefits you gained in playing this sport?</label>
+            <textarea name="comments" id="comments" placeholder="feel free to share your experience"></textarea>
+            <!-- Inside the form element, you are presented with a button with id of submit to submit all the inputs -->
+            <button type="submit">Submit</button>
         </form>
     </div>
 </body>
