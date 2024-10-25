@@ -1,0 +1,21 @@
+/* Your #image should use max-width and height properties to resize responsively, relative to the width of its parent element, without exceeding its original size */
+/* Your img element should be centered within its parent element */
+#image{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.682);
+    color: white;
+}
+
+h1{
+    text-align: center;
+    color: rgb(194, 194, 208);
+    font-weight: bold;
+    background-color: black;
+    margin: 0;
+}
