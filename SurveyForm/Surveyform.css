@@ -5,13 +5,20 @@ body{
     box-shadow: 0 0 10px rgba( 0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    }
+    max-width: 650px;
+    margin: auto;
+    margin-top: 30px;
+}
 
 #description{
-    background-color: rgba(247, 213, 233, 0.348);
+    background-color: rgba(45, 5, 26, 0.61);
     padding: 10px;
     border-radius: 8px;
     box-shadow: inset;
+    color: white;
+    max-width: 650px;
+    text-align: center;
+    margin: auto;
 }
 
 h1{
@@ -22,7 +29,7 @@ h1{
 
 body:hover{
     transform: translateY(-5px);
-    box-shadow: 0 4px 15px salmon;
+    box-shadow: 0 4px 15px rgb(62, 4, 61);
 }
 
 form{
@@ -41,15 +48,14 @@ button{
     margin: auto;
     margin-top: 10px;
     padding: 2px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    background-color: rgba(249, 241, 246, 0.299); 
+    background-color: rgba(68, 4, 44, 0.623); 
     border-radius: 5PX;
     padding: 5px;
 }
 
 button:hover{
-    transform: translatey(-5px);
     box-shadow: 0 4px 15px salmon;
+    background-color: white;
 }
 
 label{
@@ -65,6 +71,7 @@ option{
     font-size: 18px;
     margin-bottom: 5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(131, 13, 82, 0.063);
 }
 
 input{
@@ -80,10 +87,14 @@ select{
 
 textarea{
     margin-left: 30px;
+    border: 10px;
 }
 
 form{
-    background-color: rgba(233, 218, 228, 0.144);
+    background-color: rgba(150, 107, 135, 0.129);
     padding: 10PX;
-    border-radius: 10PX;
+    border-radius: 10px;
+    max-width: 650px;
+    margin: auto;
 }
+
