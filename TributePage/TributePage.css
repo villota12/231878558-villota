@@ -1,21 +1,68 @@
 /* Your #image should use max-width and height properties to resize responsively, relative to the width of its parent element, without exceeding its original size */
 /* Your img element should be centered within its parent element */
+
+#title{
+    color: rgb(70, 52, 7);
+    background-color: rgb(255, 255, 255);
+    font-size: 45px;
+    margin: 0px;
+}
+
+p{
+    margin: 0px;
+}
 #image{
     max-width: 100%;
     height: auto;
     display: block;
     margin: auto;
+    border-radius: 10px;
 }
 
 body{
-    background-color: rgba(0, 0, 0, 0.682);
-    color: white;
+    text-align: center;
 }
 
-h1{
-    text-align: center;
-    color: rgb(194, 194, 208);
-    font-weight: bold;
-    background-color: black;
-    margin: 0;
+a{
+    color: rgb(26, 31, 164);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(21, 196, 138);
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    background-color: rgba(240, 222, 222, 0.122);
+}
+
+#tribute-info{
+    background-color: rgba(245, 245, 220, 0.57);
+    border-radius: 30px;
+    padding-bottom: 2px;
+}
+
+h2{
+    padding-top: 10px;
+    font-size: 40px;
+    padding-bottom: 0px;
+    color: rgba(43, 39, 4, 0.686);
+}
+
+h3{
+    background-color: beige;
+    padding: 3px;
+    color: rgba(22, 22, 16, 0.753);
+}
+
+ul{
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+}
+
+li{
+    margin: 5px;
 }
