@@ -2,14 +2,16 @@
 /* Your img element should be centered within its parent element */
 
 #title{
-    color: rgb(70, 52, 7);
-    background-color: rgb(255, 255, 255);
+    color: rgb(237, 236, 234);
+    background-color: rgba(255, 255, 255, 0.153);
     font-size: 45px;
     margin: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 p{
     margin: 0px;
+    color: white;
 }
 #image{
     max-width: 100%;
@@ -24,7 +26,7 @@ body{
 }
 
 a{
-    color: rgb(26, 31, 164);
+    color: rgb(232, 232, 236);
     text-decoration: none;
 }
 
@@ -35,34 +37,45 @@ a:hover{
 html{
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
-    background-color: rgba(240, 222, 222, 0.122);
+    background-color: rgb(1, 1, 26);
 }
 
 #tribute-info{
-    background-color: rgba(245, 245, 220, 0.57);
+    background-color: rgba(40, 40, 48, 0.921);
     border-radius: 30px;
     padding-bottom: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h2{
     padding-top: 10px;
     font-size: 40px;
     padding-bottom: 0px;
-    color: rgba(43, 39, 4, 0.686);
+    color: rgba(249, 249, 253, 0.686);
+}
+
+#img-caption{
+    color: white;
 }
 
 h3{
-    background-color: beige;
+    background-color: rgba(228, 218, 238, 0.814);
     padding: 3px;
-    color: rgba(22, 22, 16, 0.753);
+    color: rgba(0, 0, 0, 0.921);
+    padding: 5px;
 }
 
 ul{
     max-width: 700px;
     margin: 0 auto 50px auto;
     text-align: left;
+    color: white;
 }
 
 li{
     margin: 5px;
+}
+
+.{
+    color: white;
 }

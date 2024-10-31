@@ -1,19 +1,144 @@
-ul, li, p{
+/* On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user. */
+/* Your technical documentation should use at least one media query */
+
+body{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    margin: 0;
+    display: flex;
+    word-wrap: break-word;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(50, 35, 20, 0.895);
+    padding: 0;
+    overflow-y: auto;
+    font-size: 13px;
+    color: rgb(234, 230, 223);
+}
+
+.nav-link:hover{
+    background-color: rgba(194, 156, 79, 0.564);
+    color: black;
+}
+
+#Parts_of_the_Manuscript, #Basics, #IT_Framework, #The_System_Analyst, #Organizational_Relational_Block_Diagram{
+    background-color: white;
+    color: black;
+    padding-bottom: 10px;
+}
+
+#itf, #orbd{
+    width: 400px;
+    display: block;
+    margin: auto;
+
+}
+#SAAD{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 900;
+    padding-left: 4px;
+    padding-top: 5px;
+    margin: 0;
+    background-color: rgba(117, 111, 105, 0.895);
+    color: rgb(222, 201, 157);
+    text-align: center;
+}
+
+#main-doc{
+    margin-left: 250px;
+    padding: 1em;
+    max-width: 800px;
+    background-color: rgb(14, 8, 1);
+    color: rgb(185, 185, 174);
+    text-align: left;
+}
+
+.nav-link{
+    display: block;
+    padding: 0.5em 0;
+    color: rgba(237, 224, 210, 0.812);
+    text-decoration: none;
+    padding-left: 4px;
+}
+
+@media (max-width: 768px){
+    #navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    #main-doc{
+        margin-left: 0;
+    }
 }
 
 header{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
-    padding: 10px 20px;
-    background-color: rgb(69, 39, 4);
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: rgb(51, 39, 39);
     color: white;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    text-align: center;
 }
 
 strong{
-    padding: 10px 10px;
-    margin-top: 30px;
+    padding-left: 10px;
     font-size: 20px;
+    background-color: rgba(50, 35, 20, 0.895);
+    color: White;
+    border-bottom: 1px solid black;
+    padding: 3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(32, 44, 48, 0.895);
+    color: black;
+}
+
+p{
+    margin-left: 5px;
+}
+
+table{
+    padding: 4%;
+    border: 1px solid white;
+    color: white;
+}
+
+th, td{
+    border: 1px solid white;
+}
+
+th,td:hover{
+    background-color: rgb(215, 218, 250);
+}
+
+th{
+    font-size: 20px;
+    text-align: center;
+}
+table tr:nth-child(2) td{
+    color: rgb(243, 241, 239);
+    background-color: rgba(117, 106, 106, 0.455);
+    text-align: center;
+    font-weight: bold;
 }
