@@ -1,0 +1,109 @@
+/* Your portfolio should have at least one media query */
+/* The height of the welcome section should be equal to the height of the viewport */
+/* The navbar should always be at the top of the viewport */
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    background-color: rgb(201, 238, 206);
+    padding-top: 10px;
+}
+
+li{
+    height: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(1, 18, 4);
+    padding-right: 30px;
+    font-size: 20px;
+}
+
+#welcome-section{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    margin-right: 25px;
+    font-size: 40px;
+    color: rgb(17, 70, 17);
+}
+
+p{
+    font-size: 20px;
+}
+
+img{
+    width: 300px;
+}
+
+#projects{
+    justify-content: center;
+    display: flex;
+    background-color: aquamarine;
+}
+
+.project-grid{
+    width: 600px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: white;
+    color: black;
+}
+
+.project-title{
+    text-align: left;
+    padding: 5px;
+}
+
+#contact{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    background-color: rgba(180, 241, 186, 0.338);
+    height: 200px;
+}
+
+section{
+    margin: 0;
+}
+
+#ee{
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+#ff{
+    font-size: 20px;
+}
+
+#gh{
+    font-size: 30px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    #navbar ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar ul li{
+        margin-bottom: 10px;
+    }
+
+    #welcome-section h1{
+        font-size: 2.5em;
+    }
+}
