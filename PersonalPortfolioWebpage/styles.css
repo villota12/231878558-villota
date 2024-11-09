@@ -6,7 +6,7 @@
     display: flex;
     list-style: none;
     justify-content: right;
-    background-color: rgb(201, 238, 206);
+    background-color: rgb(9, 49, 15);
     padding-top: 10px;
 }
 
@@ -16,7 +16,7 @@ li{
 
 a{
     text-decoration: none;
-    color: rgb(1, 18, 4);
+    color: rgb(255, 255, 255);
     padding-right: 30px;
     font-size: 20px;
 }
@@ -46,7 +46,9 @@ img{
 #projects{
     justify-content: center;
     display: flex;
-    background-color: aquamarine;
+    background-color: rgb(3, 59, 41);
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
 .project-grid{
@@ -57,6 +59,8 @@ img{
     margin: 10px;
     background-color: white;
     color: black;
+    box-shadow: 0px 2px 10px rgba(199, 181, 181, 0.863);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-title{
@@ -69,8 +73,9 @@ img{
     justify-content: center;
     align-items: center;
     display: block;
-    background-color: rgba(180, 241, 186, 0.338);
+    background-color: rgb(31, 33, 31);
     height: 200px;
+    color: white;
 }
 
 section{
@@ -91,6 +96,10 @@ section{
     font-size: 30px;
     border: 1px solid black;
     padding: 10px;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 @media (max-width: 768px) {
